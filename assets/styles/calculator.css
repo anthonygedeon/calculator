@@ -49,3 +49,10 @@ header > #display-numbers {
     margin-bottom: 15px;
     height: 150px;
 }
+
+.calculator-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 15px 0 15px;
+}
