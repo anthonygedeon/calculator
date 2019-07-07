@@ -16,45 +16,51 @@
 
     <body>
         <div class="wrapper">
+
+            <!-- Displays the numbers -->
             <div class="calculator-body">
                 <header>
                     <!--value is temp.-->
-                    <input type="text" class="" id="display-numbers" value="39"  >
+                    <input type="text" class="" id="display-numbers" value="39">
                 </header>
-                <div class="calculator-buttons">
-                    <ul>
-                        <li>
-                            <button class="calculator-functions">C</button>
-                            <button class="calculator-functions">+/-</button>
-                            <button class="calculator-functions">%</button>
-                            <button class="calculator-operators">/</button>
-                        </li>
-                        <li>
-                            <button class="calculator-number">7</button>
-                            <button class="calculator-number">8</button>
-                            <button class="calculator-number">9</button>
-                            <button class="calculator-operators">X</button>
-                        </li>
-                        <li>
-                            <button class="calculator-number">4</button>
-                            <button class="calculator-number">5</button>
-                            <button class="calculator-number">6</button>
-                            <button class="calculator-operators">-</button>
-                        </li>
-                        <li>
-                            <button class="calculator-number">1</button>
-                            <button class="calculator-number">2</button>
-                            <button class="calculator-number">3</button>
-                            <button class="calculator-operators">+</button>
-                        </li>
-                        <li>
-                            <button class="calculator-number">00</button>
-                            <button class="calculator-number">0</button>
-                            <button class="calculator-functions">,</button>
-                            <button class="calculator-operators">=</button>
-                        </li>
-                    </ul>
-                </div>
+
+                <!-- Calculators buttons -->
+                <table class="functions-operater">
+                    <thead>
+                        <tr class="functions">
+                            <td class="calculator-functions" id="clear">C</td>
+                            <td class="calculator-functions" id="plus">+/-</td>
+                            <td class="calculator-functions" id="percentage">%</td>
+                            <td class="calculator-operators" id="division">/</td>
+                        </tr>
+                    </thead>
+                    <tr class="numbers-operater">
+                        <td class="calculator-numbers" id="seven">7</td>
+                        <td class="calculator-numbers" id="eight">8</td>
+                        <td class="calculator-numbers" id="nine">9</td>
+                        <td class="calculator-operators" id="multiplication">x</td>
+                    </tr>
+                    <tr class="numbers-operater">
+                        <td class="calculator-numbers" id="four">4</td>
+                        <td class="calculator-numbers" id="five">5</td>
+                        <td class="calculator-numbers" id="six">6</td>
+                        <td class="calculator-operators" id="minus">-</td>
+                    </tr>
+                    <tr class="numbers-operater">
+                        <td class="calculator-numbers" id="three">3</td>
+                        <td class="calculator-numbers" id="two">2</td>
+                        <td class="calculator-numbers" id="one">1</td>
+                        <td class="calculator-operators" id="plus">+</td>
+                    </tr>
+                    <tfoot>
+                        <tr class="numbers-functions-operators">
+                            <td class="calculator-numbers" id="double-zero">00</td>
+                            <td class="calculator-numbers" id="zero">0</td>
+                            <td class="calculator-functions" id="comma">,</td>
+                            <td class="calculator-operators" id="equal">=</td>
+                        </tr>
+                    </tfoot>
+                </table>
             </div>
         </div>
 

@@ -1,4 +1,7 @@
-
+html {
+    box-sizing: border-box;
+    font-family: var(--main-font);
+}
 
 :root {
     /* Font */
@@ -6,17 +9,43 @@
 
     /* Colors */
     --red-color: #F06E6E;
-    --white-color: #F7F6F7;
+    --dirty-white: #F7F6F7;
     --black-color: #414141;
     --gray-color: #D7D4D3;
     --shadow-red: #E5A2A0;
+    --white-color: #ffffff;
 
     /* Calculator body */
-    --border-radius: 15px;
+    --border-radius: 5px;
     
     /* Spacing */
     --top: ;
     --right-left: ;
     --bottom: ;
     --line: ;
+}
+
+div.wrapper {
+    height: 100vh;
+    width: 100%;
+    background-color: var(--black-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.calculator-body {
+    border-radius: var(--border-radius);
+    background-color: var(--white-color);
+    height: 70%;
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header > #display-numbers {
+    width: 99%;
+    margin-bottom: 15px;
+    height: 150px;
 }
