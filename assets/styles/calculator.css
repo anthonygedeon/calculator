@@ -1,0 +1,13 @@
+
+
+:root {
+    /* font */
+    --main-font: 'Open Sans', sans-serif;
+
+    /* colors */
+    --red-color: #F06E6E;
+    --white-color: #F7F6F7;
+    --black-color: #414141;
+    --gray-color: #D7D4D3;
+    --shadow-red: #E5A2A0;
+}
