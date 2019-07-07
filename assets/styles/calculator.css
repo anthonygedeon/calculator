@@ -1,13 +1,22 @@
 
 
 :root {
-    /* font */
+    /* Font */
     --main-font: 'Open Sans', sans-serif;
 
-    /* colors */
+    /* Colors */
     --red-color: #F06E6E;
     --white-color: #F7F6F7;
     --black-color: #414141;
     --gray-color: #D7D4D3;
     --shadow-red: #E5A2A0;
+
+    /* Calculator body */
+    --border-radius: 15px;
+    
+    /* Spacing */
+    --top: ;
+    --right-left: ;
+    --bottom: ;
+    --line: ;
 }

@@ -6,18 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Links -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/calculator.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/normalize.css">
     <link rel="stylesheet" href="assets/styles/calculator.css">
-    <title>Calculator</title>
+
+    <title>Calculator | Home</title>
 </head>
 
     <body>
-
-
-
-
-
-
+        <div class="wrapper">
+            <div class="calculator-body">
+                <header>
+                    <!--value is temp.-->
+                    <input type="text" class="" id="display-numbers" value="39"  >
+                </header>
+                <div class="calculator-buttons">
+                    <ul>
+                        <li>
+                            <button class="calculator-functions">C</button>
+                            <button class="calculator-functions">+/-</button>
+                            <button class="calculator-functions">%</button>
+                            <button class="calculator-operators">/</button>
+                        </li>
+                        <li>
+                            <button class="calculator-number">7</button>
+                            <button class="calculator-number">8</button>
+                            <button class="calculator-number">9</button>
+                            <button class="calculator-operators">X</button>
+                        </li>
+                        <li>
+                            <button class="calculator-number">4</button>
+                            <button class="calculator-number">5</button>
+                            <button class="calculator-number">6</button>
+                            <button class="calculator-operators">-</button>
+                        </li>
+                        <li>
+                            <button class="calculator-number">1</button>
+                            <button class="calculator-number">2</button>
+                            <button class="calculator-number">3</button>
+                            <button class="calculator-operators">+</button>
+                        </li>
+                        <li>
+                            <button class="calculator-number">00</button>
+                            <button class="calculator-number">0</button>
+                            <button class="calculator-functions">,</button>
+                            <button class="calculator-operators">=</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <!-- Scripts -->
         <script src="assets/scripts/calculator.js"></script>
