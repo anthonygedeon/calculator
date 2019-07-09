@@ -17,15 +17,6 @@ html {
     --white-color: #ffffff;
     --black-color: #000000;
     --darker-white: #F5F5F5;
-
-    /* Calculator body */
-    
-    
-    /* Spacing */
-    --top: ;
-    --right-left: ;
-    --bottom: ;
-    --line: ;
 }
 
 div.wrapper,
@@ -34,6 +25,7 @@ header, .equal-box {
     display: flex;
 }
 
+/* Browswer*/ 
 div.wrapper {
     height: 100vh;
     width: 100%;
@@ -42,6 +34,7 @@ div.wrapper {
     align-items: center;
 }
 
+/* Calculator body */
 div.calculator-body {
     background-color: var(--white-color);
     box-shadow: 0 5px 20px -20px var(--black-color);
@@ -73,6 +66,7 @@ header > #display-numbers {
     padding-right: 0.625rem;
 }
 
+/* Grid for the calculator keyboard */
 .calculator-buttons {
     margin-top: 0.9375rem;
     display: grid;
