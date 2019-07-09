@@ -44,9 +44,9 @@ div.wrapper {
 
 div.calculator-body {
     background-color: var(--white-color);
+    box-shadow: 0 5px 20px -20px var(--black-color);
     height: 25rem;
     width: 14rem;
-    box-shadow: 0 5px 20px -20px var(--black-color);
     flex-direction: column;
 }
 
@@ -57,12 +57,12 @@ header {
 header > #display-numbers {
     align-self: flex-end;
     font-weight: 500;
-    font-size: 50px;
+    font-size: 3.125rem;
     color: var(--black-color);
     width: 100%;
-    margin-top: 70px;
-    margin-bottom: 31px;
-    height: 50px;
+    margin-top: 4.375rem;
+    margin-bottom: 1.9375rem;
+    height: 3.125rem;
     border: none;
     background-color: inherit;
 }
@@ -70,11 +70,11 @@ header > #display-numbers {
 [type="text"] {
     text-align: right;
     direction: ltr;
-    padding-right: 10px;
+    padding-right: 0.625rem;
 }
 
 .calculator-buttons {
-    margin-top: 15px;
+    margin-top: 0.9375rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr; 
     grid-row-gap: 25px;
@@ -95,32 +95,44 @@ header > #display-numbers {
 
 .calculator-functions {
     color: var(--black-color);
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 500;
 } 
 
 .calculator-numbers {
     color: var(--keypad);
-    font-size: 11px;
+    font-size: 0.6875rem;
 }
 
-.calculator-operators {
-    color: var(--red-color);
-}
 .equal-box {
     align-content: center;
     justify-content: center;
-    background-color: var(--equal-sign);
-    width: 50px;
-    height: 52px;
+    width: 3.75rem;
+    height: 3.75rem;
+    background-color: transparent;
     grid-column-start: 4;
     justify-self: end;
     color: var(--white-color);
-    font-weight: 500;
     text-align: center;
-    transition: transform 200ms cubic-bezier(1,-0.93, 0, 2.47);
+    margin-right: -0.3125rem;
 }
 
-.equal-box:hover {
+#equal {
+    color: var(--white-color);
+    background-color: var(--equal-sign);
+    font-size: 0.8125rem;
+    width: 3.125rem;
+    height: 3.25rem;
+    transition: transform 300ms cubic-bezier(1,-0.93, 0, 2.47);
+}
+
+#equal:hover {
     transform: scale(0.5);
+    background-color: var(--equal-sign);
+    width: 3.125rem;
+    height: 3.25rem;
+    color: var(--white-color);
+    font-size: 1.875rem;
+    transform: scale(0.5);
+    font-weight: 500;
 }
