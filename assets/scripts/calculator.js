@@ -19,19 +19,19 @@ keypad.addEventListener("click", event => {
 });
 
 function add(number1, number2) {
-    number1 + number2;
+    return number1 + number2;
 }
 
 function subtract(number1, number2) {
-    number1 - number2;
+    return number1 - number2;
 }
 
 function mulitply(number1, number2) {
-    number1 * number2;
+    return number1 * number2;
 }   
 
 function divide(number1, number2) {
-    number1 / number2;
+    return number1 / number2;
 }
 
 function operate() {
