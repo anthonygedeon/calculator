@@ -4,13 +4,25 @@
  * Calculator
  */
 
+// Variables
+const display = document.querySelector("#display-numbers");
+const keypad = document.querySelector(".calculator-buttons");
+
+const numbers = [];
+
+// Event listeners
+keypad.addEventListener("click", event => {
+    if (event.target.tagName == "BUTTON") {
+        numbers.push(event.target.textContent)
+        let ints = numbers.map(parseFloat);
+        display.value = numbers.join("");
+        add(ints)
+    }
+});
+
 // Functions
-function display(number) {
-    let 
-}
-
 function clear() {
-
+    
 }
 
 function plusOrNegative() {
@@ -21,8 +33,9 @@ function percentage() {
 
 }
 
-function add(number1, number2) {
-    
+function add(number) {
+    const total = number.reduce( (accumulator, currentValue) => accumulator + currentValue);
+    console.log(total)
 }
 
 function subtract(number1, number2) {
