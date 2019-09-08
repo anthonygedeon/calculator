@@ -20,11 +20,19 @@ var displayNumbers = function() {
         return display = parseInt(document.querySelector('#display-numbers').value = createNumbers(event));
 }
 
+var addition = function(number1, number2) {
+        return number1 + number2;
+}
+
 /****************************
         Event Listeners
 *****************************/
 document.addEventListener('click', function(event) {
         if (event.target.className === 'calculator-numbers') {
                 displayNumbers();
+        }
+
+        if (event.target.className === 'calculator-operators') {
+                
         }
 });
