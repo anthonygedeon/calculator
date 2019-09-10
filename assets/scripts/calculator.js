@@ -3,6 +3,10 @@
 *****************************/
 var listNumbers = '';
 
+var patterns = {
+        operators: /÷×−+=/,
+}
+
 /****************************
         Functions
 *****************************/
@@ -21,8 +25,10 @@ var displayNumbers = function() {
 }
 
 var addition = function(number1, number2) {
+        var number1 = display;
         return number1 + number2;
 }
+
 
 /****************************
         Event Listeners
