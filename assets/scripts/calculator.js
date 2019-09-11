@@ -1,7 +1,11 @@
 /****************************
         Variables
 *****************************/
-var listNumbers = '';
+var numbers = '';
+var previousValue = ;
+var newValue = ;
+var operator = ;
+var result = ;
 
 var calculator = {
         operators: /÷×−+=/,
@@ -12,12 +16,8 @@ var calculator = {
 *****************************/
 var createNumbers = function(event) {
         var number = event.target.textContent; 
-
-        do {
-                listNumbers += number;
-        } while (false)
-
-        return listNumbers;
+        numbers += number;
+        return numbers;
 }       
 
 var displayNumbers = function() {
@@ -45,10 +45,18 @@ var divide = function(number1, number2) {
 *****************************/
 document.addEventListener('click', function(event) {
         if (event.target.className === 'calculator-numbers') {
-                displayNumbers();
+                // displayNumbers();
+
+                // if there are numbers already made then dont display those numbers
+                var n = displayNumbers();
+                if (typeof n === 'number') {
+                        return;
+                } 
         }
 
         if (event.target.className === 'calculator-operators') {
+                document.querySelector('#display-numbers').value = '';
                 console.log(addition(displayNum1, 1))
         }
+
 });
