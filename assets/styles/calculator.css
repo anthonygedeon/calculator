@@ -118,6 +118,7 @@ header > #display-numbers {
     width: 3.125rem;
     height: 3.25rem;
     transition: transform 300ms cubic-bezier(1,-0.93, 0, 2.47);
+    border: none;
 }
 
 #equal:hover {
