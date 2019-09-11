@@ -111,3 +111,9 @@ document.addEventListener('click', function(event) {
 
 
 
+/*
+TODO:
+        1. Create one function that can make the math happen, don't create add, sub, divide. Just one if possible
+        2. instead of the switch use regex
+        3. Use forEach instead of the document.addEventListener
+*/
