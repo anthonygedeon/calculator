@@ -15,6 +15,12 @@
 		01DBA85E25E36A4300412932 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01DBA85D25E36A4300412932 /* Preview Assets.xcassets */; };
 		01DBA86925E36A4300412932 /* CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DBA86825E36A4300412932 /* CalculatorTests.swift */; };
 		01DBA8A725E3734400412932 /* CalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01DBA8A625E3734400412932 /* CalculatorUITests.swift */; };
+		01F44B2725E470B000E88917 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01F44B2625E470B000E88917 /* Roboto-Bold.ttf */; };
+		01F44B2C25E470BC00E88917 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 01F44B2B25E470BC00E88917 /* Roboto-Medium.ttf */; };
+		01F44B3125E4751C00E88917 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F44B3025E4751C00E88917 /* ThemePicker.swift */; };
+		01F44B3925E4875D00E88917 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F44B3825E4875D00E88917 /* View+Extension.swift */; };
+		01F44B3E25E4934900E88917 /* NumericKeypad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F44B3D25E4934900E88917 /* NumericKeypad.swift */; };
+		01F44B4325E493A200E88917 /* CalculatorDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F44B4225E493A200E88917 /* CalculatorDisplay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		01DBA86F25E36A4300412932 /* CalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		01DBA8A625E3734400412932 /* CalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorUITests.swift; sourceTree = "<group>"; };
 		01DBA8AB25E3737400412932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01F44B2625E470B000E88917 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		01F44B2B25E470BC00E88917 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		01F44B3025E4751C00E88917 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
+		01F44B3825E4875D00E88917 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		01F44B3D25E4934900E88917 /* NumericKeypad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericKeypad.swift; sourceTree = "<group>"; };
+		01F44B4225E493A200E88917 /* CalculatorDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorDisplay.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +145,7 @@
 			children = (
 				01C9D3AA25E3783600253C34 /* Color+Extension.swift */,
 				01C9D3AF25E3784700253C34 /* Font+Extension.swift */,
+				01F44B3825E4875D00E88917 /* View+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -140,6 +153,8 @@
 		01DBA88825E36AED00412932 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				01F44B2625E470B000E88917 /* Roboto-Bold.ttf */,
+				01F44B2B25E470BC00E88917 /* Roboto-Medium.ttf */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -147,6 +162,9 @@
 		01DBA88925E36C8600412932 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				01F44B3025E4751C00E88917 /* ThemePicker.swift */,
+				01F44B3D25E4934900E88917 /* NumericKeypad.swift */,
+				01F44B4225E493A200E88917 /* CalculatorDisplay.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -263,8 +281,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F44B2C25E470BC00E88917 /* Roboto-Medium.ttf in Resources */,
 				01DBA85E25E36A4300412932 /* Preview Assets.xcassets in Resources */,
 				01DBA85B25E36A4300412932 /* Assets.xcassets in Resources */,
+				01F44B2725E470B000E88917 /* Roboto-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +310,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				01DBA85925E36A4300412932 /* CalculatorView.swift in Sources */,
+				01F44B3125E4751C00E88917 /* ThemePicker.swift in Sources */,
+				01F44B4325E493A200E88917 /* CalculatorDisplay.swift in Sources */,
 				01C9D3AB25E3783600253C34 /* Color+Extension.swift in Sources */,
 				01C9D3B025E3784700253C34 /* Font+Extension.swift in Sources */,
+				01F44B3E25E4934900E88917 /* NumericKeypad.swift in Sources */,
+				01F44B3925E4875D00E88917 /* View+Extension.swift in Sources */,
 				01DBA85725E36A4300412932 /* CalculatorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

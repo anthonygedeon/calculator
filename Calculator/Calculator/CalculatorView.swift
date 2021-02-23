@@ -15,65 +15,35 @@ enum Theme {
 
 }
 
-struct Operators {
-    
-    func add() {
-        
-    }
-    
-    func subtract() {
-        
-    }
-    
-    func multiply() {
-        
-    }
-    
-    func divide() {
-        
-    }
-    
-    func equalTo() {
-        
-    }
-}
-
-struct Tools {
-    
-    func clearAll() {
-        
-    }
-    
-    func removeLastNumber() {
-        
-    }
-    
-    func convertToPercentage() {
-        
-    }
-    
-    func convertNumberToPositive() {
-        
-    }
-    
-    func convertNumberToNegative() {
-        
-    }
-    
-    func convertNumberToDecimalPoint() {
-        
-    }
-}
-
 struct CalculatorView: View {
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        ZStack(alignment: .top) {
+            
+            Color
+                .darkBackground
+                .ignoresSafeArea()
+            
+            VStack(alignment: .center) {
+                ThemePicker()
+                
+                CalculatorDisplay()
+                
+                NumericKeypad()
+
+            }
+            .padding(.top)
+            
+        }
     }
 }
 
 struct CalculatorView_Previews: PreviewProvider {
     static var previews: some View {
-        CalculatorView()
+        Group {
+            CalculatorView()
+            CalculatorView()
+        }
     }
 }
