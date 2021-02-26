@@ -43,7 +43,6 @@ struct CalculatorView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
             CalculatorView()
-            CalculatorView()
         }
     }
 }
